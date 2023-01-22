@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+body {
+    width: 100%
+    height: 100vh;
+    font-family: 'Allerta Stencil', sans-serif;
+    /* background-color: red; */
+}
+
+#logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#logo {
+    animation: fill 0.5s ease forwards 2.1s;
+}
+p {
+    font-size: 20px;
+    position: absolute;
+    padding-top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    text-align: center;
+    color: white;
+    animation: color 2s ease forwards 3s;
+}
+#logo line {
+    stroke-width: 1;
+    stroke: #888888;
+}
+#logo line:nth-child(1){
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: line-anim 2s ease 0.3s;
+}
+#logo line:nth-child(2){
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: line-anim 2s ease 0.3s;
+}
+#logo line:nth-child(3){
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: line-anim 2s ease 0.2s;
+}
+#logo line:nth-child(4){
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: line-anim 2s ease 0.3s;
+}
+#logo line:nth-child(5){
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: line-anim 2s ease 0.3s;
+}
+#logo line:nth-child(6){
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: line-anim 2s ease 0.3s;
+}
+#logo line:nth-child(7){
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: line-anim 2s ease 0.1s;
+} 
+#logo line:nth-child(8){
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: line-anim 2s ease 0.1s;
+}
+#logo line:nth-child(9){
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: line-anim 2s ease 0.2s;
+}
+#logo line:nth-child(10){
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: line-anim 2s ease 0.3s;
+}
+#logo line:nth-child(11){
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: line-anim 2s ease 0.4s;
+}
+#logo line:nth-child(12){
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: line-anim 2s ease 0.5s;
+} 
+
+#logo line:nth-child(13){
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: line-anim 2s ease 0.6s;
+} 
+#logo line:nth-child(14){
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: line-anim 2s ease 0.6s;
+}
+#logo line:nth-child(15){
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: line-anim 2s ease 0.6s;
+}
+#logo line:nth-child(16){
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: line-anim 2s ease 0.6s;
+}
+#logo line:nth-child(17){
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: line-anim 2s ease 0.6s;
+}
+#logo line:nth-child(18){
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: line-anim 2s ease 0.6s;
+}
+#logo line:nth-child(19){
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: line-anim 2s ease 0.6s;
+}
+#logo line:nth-child(20){
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: line-anim 2s ease 0.6s;
+}
+
+#logo path:nth-child(21){
+    stroke-width: 3;
+    stroke: #232b2b;
+  stroke-dasharray: 1270;
+  stroke-dashoffset: 1270;
+  animation: forwards;
+  /* animation: line-anim 2s ease forwards 1.2s; */
+  
+  animation-name: line-anim, right-more;
+    animation-duration: 2s, 1s;
+    animation-delay: 1.2s, 2.5s; /* add this */
+    animation-timing-function: ease;
+    animation-iteration-count: forwards, forwards;
+}
+#logo path:nth-child(22){
+  stroke-width: 3;
+  stroke: #232b2b;
+  stroke-dasharray: 1480;
+  stroke-dashoffset: 1480;
+  animation: forwards;
+  /* animation: line-anim 2s ease forwards 1.2s; */
+  animation-name: line-anim, right;
+    animation-duration: 2s, 1s;
+    animation-delay: 1.2s, 2.5s; /* add this */
+    animation-timing-function: ease;
+    animation-iteration-count: forwards, forwards;
+}
+#logo path:nth-child(23){
+   stroke-width: 3;
+   stroke: #232b2b;
+  stroke-dasharray: 1464;
+  stroke-dashoffset: 1464;
+  animation: line-anim 2s ease forwards 0.9s; 
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+    from {
+    fill: transparent;
+  }
+  to {
+    fill: #232b2b;
+    width: 660px;
+    /* -webkit-mask-image: url('subtle-grunge.png');
+    -webkit-mask-size: 400px 200px;
+    mix-blend-mode: multiply; */
+  }
+}
+
+@keyframes color {
+  to {
+    color: #232b2b;
+  }
+}
+
+@keyframes right {
+    to {
+        transform: translate(10px,0px);
+    }
+}
+
+@keyframes right-more {
+    to {
+        transform: translate(20px, 0px);
+    }
+}
+
+@keyframes width {
+    to {
+        width: 660px;
+    }
+}
